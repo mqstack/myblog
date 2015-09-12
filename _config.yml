@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: mqstack
 subtitle:
 description:
-author: John Doe
-language:
+author: mq
+language: zh-Hans
 timezone:
 
 # URL
@@ -68,6 +68,33 @@ theme: next
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:github
-  repo:https://github.com/mqstack/mqstak.github.io.git
-  branch:master
+  type: git
+  repo: https://github.com/mqstack/mqstack.github.io.git
+  branch: master
+  
+# =============================================================================
+# NexT Theme configuration
+# =============================================================================
+
+avatar: https://avatars0.githubusercontent.com/u/1272326?v=3&u=09d52acffbbb2a2f7cb1e6efb13eb0823dc36375&s=140
+
+duoshuo_shortname: mqstack
+
+# Social links
+social:
+  GitHub: https://github.com/mqstack
+  
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons: by-nc-sa
+
+# Specify the date when the site was setup
+since: 2015
+
+#Swiftype Search key
+swiftype_key: yqeEE9GeLfm-pyT2WDSK
+
+# =============================================================================
+# End NexT Theme configuration
+# =============================================================================
