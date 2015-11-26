@@ -9,10 +9,10 @@ tags:
 ##引言
 
 Hexo 是一个快速、简洁且高效的博客框架，使用Markdown解析，生成静态网页。本文介绍Hexo的安装过程，及基本使用。
-
+<!--more-->
 ##安装
 
-####准备
+###准备
 
 安装前需准备以下应用：
 
@@ -20,14 +20,14 @@ Git
 
 Node.js
 
-####安装Hexo
+###安装Hexo
 
 准备完毕后，执行如下命令安装Hexo
 
 	$ npm install hexo-cli -g
 	$ npm install hexo --save
 
-####初始化
+###初始化
 
 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
 
@@ -61,7 +61,7 @@ source 资源文件夹是存放用户资源的地方
 
 themes 存放皮肤的文件夹,默认皮肤为landscape
 
-####安装插件
+###安装插件
 
 可按需选择插件安装
 
@@ -87,12 +87,12 @@ themes 存放皮肤的文件夹,默认皮肤为landscape
 
 ##使用
 
-####配置
+###配置
 
 可以在 _config.yml 中修改大部份的配置，这里引用官方文档里描述。
 https://hexo.io/zh-cn/docs/configuration.html
 
-####写文章
+###写文章
 
 可以直接在source/_posts文件夹下新建.md文件，或者使用如下命令新建文章。
 
@@ -116,7 +116,7 @@ $ hexo new post <title>
 
 就可以本地预览了。
 
-####部署到Github
+###部署到Github
 
 Github为个人和项目提供了页面展示的功能，以个人为例，创建一个以
 
