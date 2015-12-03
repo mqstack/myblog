@@ -14,6 +14,8 @@ FFmpeg是功能强大的多媒体编解码库，广泛应用于各个平台的�
 <!--more-->
 
 ##准备
+环境linux，
+
 下载ffmpeg源码： http://www.ffmpeg.org/download.html
 
 下载linux版ndk： http://developer.android.com/ndk/downloads/index.html
@@ -103,7 +105,10 @@ sysroot androdlib目录。
 执行完毕后在android目录下就生成了lib和include目录，lib目录下面放的so文件，include目录下放的头文件。
 将这些文件拷贝出来就可以准备后续开发了。
 
-待续。。。
+##更多
+
+[Android多媒体之二：jni调用ffmpeg命令](/2015/11/27/call-ffmpeg-with-jni/)
+[Android多媒体之三：编译并使用x264库](/2015/12/03/build-x264-with-ndk/)
 
 ##参考
 http://www.roman10.net/how-to-build-ffmpeg-with-ndk-r9/
