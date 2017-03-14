@@ -6,13 +6,13 @@ tags:
 - Hexo
 - Blog
 ---
-##引言
+
 
 Hexo 是一个快速、简洁且高效的博客框架，使用Markdown解析，生成静态网页。本文介绍Hexo的安装过程，及基本使用。
 <!--more-->
-##安装
+## 安装
 
-###准备
+### 准备
 
 安装前需准备以下应用：
 
@@ -20,14 +20,14 @@ Git
 
 Node.js
 
-###安装Hexo
+### 安装Hexo
 
 准备完毕后，执行如下命令安装Hexo
 
 	$ npm install hexo-cli -g
 	$ npm install hexo --save
 
-###初始化
+### 初始化
 
 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
 
@@ -46,6 +46,7 @@ Node.js
 	|   ├── _drafts
 	|   └── _posts
 	└── themes
+
 
 其中：
 
@@ -85,14 +86,14 @@ themes 存放皮肤的文件夹,默认皮肤为landscape
 
 	hexo server
 
-##使用
+## 使用
 
-###配置
+### 配置
 
 可以在 _config.yml 中修改大部份的配置，这里引用官方文档里描述。
 https://hexo.io/zh-cn/docs/configuration.html
 
-###写文章
+### 写文章
 
 可以直接在source/_posts文件夹下新建.md文件，或者使用如下命令新建文章。
 
@@ -101,14 +102,14 @@ $ hexo new post <title>
 使用命令生成的文章，会套用scaffolds下面的模板，模板中可以自定义参数。
 
 	参数			描述				默认值
-	layout		布局	
-	title		标题	
+	layout		布局
+	title		标题
 	date		建立日期			文件建立日期
 	updated		更新日期			文件更新日期
 	comments	开启文章的评论功能	true
-	tags		标签（不适用于分页）	
-	categories	分类（不适用于分页）	
-	permalink	覆盖文章网址	
+	tags		标签（不适用于分页）
+	categories	分类（不适用于分页）
+	permalink	覆盖文章网址
 
 文章使用Markdown书写，写完后
 
@@ -116,7 +117,7 @@ $ hexo new post <title>
 
 就可以本地预览了。
 
-###部署到Github
+### 部署到Github
 
 Github为个人和项目提供了页面展示的功能，以个人为例，创建一个以
 
@@ -138,10 +139,10 @@ Hexo提供了方便的部署功能，可以将生成的静态页面推到git仓�
 
 	hexo g #生成页面
 	hexo d #部署
-  
 
 
-##参考
+
+## 参考
 https://hexo.io/zh-cn/docs/
 
 http://wsgzao.github.io/post/hexo-guide/

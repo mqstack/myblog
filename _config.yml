@@ -7,13 +7,13 @@ title: 时间是最好的朋友
 subtitle:
 description:
 author: mqstack
-language: zh-Hans
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://www.mqstack.ml/blog
+root: /blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -63,15 +63,29 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: next
+theme: maupassant
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
+#deploy:
+  #type: git
+  #repo: https://github.com/mqstack/mqstack.github.io.git
+  #branch: master
 deploy:
   type: git
-  repo: https://github.com/mqstack/mqstack.github.io.git
+  repo: ssh://root@104.160.33.107:27546/root/git/blog.git
   branch: master
-  
+# deploy:
+#     type: rsync
+#     host: 104.160.33.107
+#     user: root
+#     root: /var/www/blog
+#     port: 29853
+#     delete: true
+#     verbose: true
+#     ignore_errors: false
+
+
 # =============================================================================
 # NexT Theme configuration
 # =============================================================================
@@ -83,7 +97,7 @@ duoshuo_shortname: mqstack
 # Social links
 social:
   GitHub: https://github.com/mqstack
-  
+
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero

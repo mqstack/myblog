@@ -13,7 +13,7 @@ FFmpeg是功能强大的多媒体编解码库，广泛应用于各个平台的�
 在看了很多人写的编译方法，尝试了很多方案后，发现只有下面这个方法能够一次成功，其他都会出各种各样的问题。
 <!--more-->
 
-##准备
+## 准备
 环境linux，
 
 下载ffmpeg源码： http://www.ffmpeg.org/download.html
@@ -22,7 +22,7 @@ FFmpeg是功能强大的多媒体编解码库，广泛应用于各个平台的�
 
 将源码和ndk都下载放到本地目录，路径随意。
 
-##写编译脚本
+## 写编译脚本
 进入到ffmpeg目录，打开configure文件，找到以下几行：
 
 	SLIBNAME_WITH_MAJOR='$(SLIBNAME).$(LIBMAJOR)'
@@ -71,7 +71,7 @@ FFmpeg是功能强大的多媒体编解码库，广泛应用于各个平台的�
 	make install
 	}
 	CPU=arm
-	PREFIX=$(pwd)/android/$CPU 
+	PREFIX=$(pwd)/android/$CPU
 	ADDI_CFLAGS="-marm"
 	build_one
 
@@ -105,13 +105,10 @@ sysroot androdlib目录。
 执行完毕后在android目录下就生成了lib和include目录，lib目录下面放的so文件，include目录下放的头文件。
 将这些文件拷贝出来就可以准备后续开发了。
 
-##更多
+## 更多
 
 [Android多媒体之二：jni调用ffmpeg命令](/2015/11/27/call-ffmpeg-with-jni/)
 [Android多媒体之三：编译并使用x264库](/2015/12/03/build-x264-with-ndk/)
 
-##参考
+## 参考
 http://www.roman10.net/how-to-build-ffmpeg-with-ndk-r9/
-
-
-

@@ -10,7 +10,7 @@ tags:
 x264是性能最好的H.264/AVC编码器，基于GNU GPL协议。FFmpeg可以使用x264作为编码库，能够提高编码性能。但注意ffmpeg是基于LGPL协议的，由于GPL协议的传染性，如果是使用ffmpeg的商业软件，需要确保没有使用x264等GPL协议的库。
 <!--more-->
 
-##准备
+## 准备
 环境linux，
 
 下载ffmpeg源码： http://www.ffmpeg.org/download.html
@@ -21,7 +21,7 @@ x264是性能最好的H.264/AVC编码器，基于GNU GPL协议。FFmpeg可以使
 
 将源码和ndk都下载放到本地目录，路径随意。
 
-##编译脚本
+## 编译脚本
 
 首先，跟ffmpeg一样，还是先进入到x264目录，修改configure文件。定位到
 	
@@ -67,7 +67,7 @@ x264是性能最好的H.264/AVC编码器，基于GNU GPL协议。FFmpeg可以使
 
 一会，便在android/arm目录下看到编译结果了。
 
-##编译包含x264的ffmpeg
+## 编译包含x264的ffmpeg
 
 之前一篇介绍了编译ffmpeg方法：
 
@@ -118,7 +118,7 @@ x264是性能最好的H.264/AVC编码器，基于GNU GPL协议。FFmpeg可以使
 
 然后将编译好的include和lib目录拷贝至ffmpeg/x264目录下，执行脚本就可以了。
 
-##更多
+## 更多
 
 [Android多媒体之一：编译ffmpeg](/2015/11/26/android-multimedia-compile-ffmpeg/)
 [Android多媒体之二：jni调用ffmpeg命令](/2015/11/27/call-ffmpeg-with-jni/)
