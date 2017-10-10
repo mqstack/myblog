@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.mqstack.ml/blog
-root: /blog
+url: http://www.mqstack.ml
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -67,14 +67,14 @@ theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-#deploy:
-  #type: git
-  #repo: https://github.com/mqstack/mqstack.github.io.git
-  #branch: master
 deploy:
   type: git
-  repo: ssh://root@104.160.33.107:27546/root/git/blog.git
+  repo: https://github.com/mqstack/mqstack.github.io.git
   branch: master
+#deploy:
+  #type: git
+  #repo: ssh://root@104.160.33.107:27546/root/git/blog.git
+  #branch: master
 # deploy:
 #     type: rsync
 #     host: 104.160.33.107
