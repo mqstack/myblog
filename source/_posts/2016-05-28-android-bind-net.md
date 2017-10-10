@@ -82,9 +82,9 @@ https://android.googlesource.com/platform/frameworks/base/+/android-5.0.0_r7/ser
 
 我们看到isCaptivePortal 方法是传入一个参数InetAddress server的。要想在国内使用这个feature，可以将谷歌的地址替换为国内网友架的服务或者自己建一个服务例如：https://github.com/HorseLuke/drafts/blob/master/sinaapp_generate_204/README.md。
 
-有网友已经搭好了服务，将地址替换到noisyfox.cn，具体可参考https://www.noisyfox.cn/45.html， 只要一个命令即可：
+或者使用现成的v2ex搭建的，只要一个命令即可：
 
->adb shell "settings put global captive_portal_server noisyfox.cn"
+>adb shell "settings put global captive_portal_https_url https://captive.v2ex.co/generate_204"
 
 也可以完全禁止掉这个检测：
 >adb shell "settings put global captive_portal_detection_enabled 0"

@@ -24,6 +24,7 @@ Node.js
 
 准备完毕后，执行如下命令安装Hexo
 
+
 	$ npm install hexo-cli -g
 	$ npm install hexo --save
 
@@ -37,7 +38,6 @@ Node.js
 
 新建完成后，文件夹目录如下：
 
-	.
 	├── _config.yml
 	├── package.json
 	├── scaffolds
@@ -65,6 +65,7 @@ themes 存放皮肤的文件夹,默认皮肤为landscape
 ###安装插件
 
 可按需选择插件安装
+
 
 	$ npm install hexo-generator-index --save
 	$ npm install hexo-generator-archive --save
@@ -97,7 +98,7 @@ https://hexo.io/zh-cn/docs/configuration.html
 
 可以直接在source/_posts文件夹下新建.md文件，或者使用如下命令新建文章。
 
-$ hexo new post <title>
+	$ hexo new post <title>
 
 使用命令生成的文章，会套用scaffolds下面的模板，模板中可以自定义参数。
 
@@ -143,6 +144,7 @@ Hexo提供了方便的部署功能，可以将生成的静态页面推到git仓�
 
 
 ## 参考
+
 https://hexo.io/zh-cn/docs/
 
 http://wsgzao.github.io/post/hexo-guide/

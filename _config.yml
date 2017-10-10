@@ -7,7 +7,7 @@ title: 时间是最好的朋友
 subtitle:
 description:
 author: mqstack
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -40,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: maupassant
+theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
